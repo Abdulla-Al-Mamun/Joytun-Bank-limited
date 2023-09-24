@@ -11,6 +11,7 @@ document.getElementById("btn-log").addEventListener('click', function () {
 
     if (email === 'mamun@gmail.com' && pass === 'mamun') {
         console.log('valid user');
+        location.href = 'bank.html'
     }
     else {
         console.log('invalid user');
