@@ -10,10 +10,9 @@ document.getElementById("btn-log").addEventListener('click', function () {
     //  chack password and email 
 
     if (email === 'mamun@gmail.com' && pass === 'mamun') {
-        console.log('valid user');
         location.href = 'bank.html'
     }
     else {
-        console.log('invalid user');
+        alert('invalide Password')
     }
 })
