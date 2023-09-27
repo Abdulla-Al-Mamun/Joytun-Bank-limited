@@ -12,6 +12,13 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
     withdraw.innerText = totalWithdrawCalculation;
 
 
+    const blance = document.getElementById('total-blance');
+    const blanceStrion = blance.innerText;
+    const currentBlance = parseFloat(blanceStrion);
+
+    const totalBlanceCalculation = currentBlance - currentWithdraw;
+    blance.innerText = totalBlanceCalculation;
+
 
     withdrawField.value = '';
 
